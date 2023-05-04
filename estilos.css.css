@@ -1,0 +1,14 @@
+h1{
+	text-align: center;
+}
+p{
+	font-family: arial;
+	font-size: 16x
+}
+.resaltado {
+	color:lightgreen;
+}
+body {
+	background-color:red;
+}
+ul {list-style-type: square}
