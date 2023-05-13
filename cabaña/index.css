@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+/* inicio*/
+header{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    background: #59C173;  
+    background: linear-gradient(to left, #ecd1777a, #d5e28c65, #c8e93354), url(../La-Deseada-Residencia-main/img/principal3.jpg); 
+    background: linear-gradient(to left, #ecd1777a, #d5e28c65, #c8e93354), url(../La-Deseada-Residencia-main/img/principal3.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-navegacion{
+    text-align:right ;
+    padding: 30px 50px 0 0;
+
+}
+.menu-navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+
+.titulo-header{
+    color: #000000;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 60px;
+}
+.subtitulo-header{
+    font-weight: 300;
+    font-size: 20px;
+}
+.subtitulo-nosotros{
+    color: #31c903;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.contenedor-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+.opiniones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont-opiniones{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-opiniones img{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.opiniones-texto{
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+}
+footer{
+    background: #eba626;
+    padding-bottom: 0.1px;
+}
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contacto{
+    width: 40%;
+    color: #fff;
+}
+.diseño{
+    font-weight: 500;
+    font-size: 40px;
+}
+.diseño+p{
+    font-weight: 500;
+}
+.redes-social{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.red{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+    line-height: 60px;
+}
+.linea{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
