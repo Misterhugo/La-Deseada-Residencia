@@ -99,7 +99,7 @@ main{
     flex-wrap: wrap;
 }
 .img-galeria{
-    width: 24%;
+    width: 40%;
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
@@ -142,7 +142,6 @@ main{
     padding-bottom: 30px;
 }
 .opiniones{
-   
     display: flex;
     justify-content: space-evenly;
 }
@@ -172,6 +171,8 @@ main{
 .opiniones-texto h3{
     margin: 10px 0;
 }
+
+/*footer*/
 footer{
     background: #ce790a;
     padding-bottom: 0.1px;
@@ -210,7 +211,6 @@ footer{
     border-radius: 50%;
     text-align:center;
     color: #fff;
-    
 }
 .logo{
     width: 30px;
@@ -218,10 +218,124 @@ footer{
     margin: 25%;
 }
 .linea{
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     height: 2px;
     background: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo-header{
+        font-size: 40px;
+    }
+    .subtitulo-header{
+        font-size: 20px;
+    }
+
+    .contenedor-nosotros iframe{
+        width: 80%;
+        margin-bottom: 35px;
+    }
+    
+    .contenedor-nosotros p{
+        width: 80%;
+        font-size: ;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+    
+    
+    .opiniones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-opiniones{
+        width: 80%;
+        margin-bottom: 30px;
+        padding: 3px;
+    }
+    
+    .footer-contenido{
+        justify-content: center;
+    }
+
+    .redes-social{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .red{
+        margin-left: 0;
+    }
+
+    .contacto{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo-header{
+        font-size: 35px;
+    }
+
+    .subtitulo-header{
+        font-size: 18px;
+    }
+
+    .contenedor-nosotros iframe{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .contenedor-nosotros p{
+        width: 90%;
+    }
+
+
+    .img-galeria{
+        width: 90%;
+    }
+   
+    .cont-opiniones{
+        width: 90%;
+        margin-bottom: 30px;
+        padding: 3px;
+    }
+    
+    .redes-social{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    
+
+    .red{
+        margin-left: 0;
+    }
+
+    .contacto{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    
 }
