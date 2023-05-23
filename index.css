@@ -184,6 +184,33 @@ main{
     margin: 10px 0;
 }
 
+/*reserva*/
+.reserva{  
+              
+    margin: 150px; 
+    background-color: #ce790a ;  
+    color: rgb(0, 0, 0);  
+    font-family: verdana;  
+    font-size: 100%;
+    border-radius: 5%;
+    padding: 70px;
+}  
+.formulario{
+    font-size: 20px;
+}
+    .reserva h1{  
+    color: indigo;  
+    font-family: verdana;  
+    font-size: 100%;  
+    }  
+    .reserva h3{  
+    color: indigo;  
+    font-family: verdana;  
+    font-size: 100%;  
+}
+
+
+
 /*footer*/
 footer{
     background: #ce790a;
