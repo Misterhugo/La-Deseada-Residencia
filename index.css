@@ -11,8 +11,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 /* inicio*/
-
-
 header{
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +37,7 @@ header .textos-header{
     position: fixed;
     text-align:right ;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: #4e5353a4;
     width: 100%;
 
 }
@@ -72,24 +70,22 @@ header .textos-header{
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s, transform 1s;
-  }
+}
   
-  .residence.show {
+.residence.show {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 
 /*Nosotros*/
-
-h2{
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top: 5rem;
-}
-
 main{
     margin: auto;
     overflow: hidden;
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5rem;
 }
 
 .subtitulo{
@@ -111,7 +107,7 @@ main{
     font-size:  18px;
     text-align: justify;
     padding: 30px;
-    background: #494848;
+    background: #838282;
     color: rgb(255, 255, 255);
     border-radius: 5%;
 }
@@ -136,8 +132,9 @@ main{
     width: 40%;
     margin-bottom: 10px;
     overflow: hidden;
+    position: relative;
     cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px 0 #b7c7c7a4;
 }
 .img-galeria img{
     width: 100%;
@@ -179,7 +176,7 @@ main{
     justify-content: space-evenly;
 }
 .cont-opiniones{
-    background: #494848;
+    background: #838282;
     color: white;
     display: flex;
     width: 32%;
@@ -207,11 +204,12 @@ main{
     margin: 10px 0;
 }
 
+
 /*reserva*/
 form {
     max-width: 400px;
     margin: 0 auto;
-  }
+}
 
 .form-container {
     background-color: #fff;
@@ -223,7 +221,7 @@ form {
     align-items: center;
     height: 100vh;
     margin-top: -15rem;
-  }
+}
   
 .form-group {
     margin-bottom: 20px;
@@ -259,7 +257,6 @@ form {
   }
 
 
-
 /*Validacion de Formulario*/
 
 
@@ -290,7 +287,6 @@ form {
     color: #fff;
 }
 
-
 /*API del clima*/
 
 #clima-container {
@@ -315,25 +311,52 @@ form {
 
 
 
-/*Footer*/
 
-footer {
-    background-color: #333;
+/*footer*/
+footer{
+    background: #838282;
+    padding-bottom: 0.1px;
+}
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contacto{
+    width: 40%;
     color: #fff;
-    padding: 20px;
+}
+.diseño{
+    font-size: 30px;
+}
+.diseño+p{
+    font-weight: 500;
+}
+.redes-social{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
     text-align: center;
-  }
-  
-  .social-icons {
-    margin-bottom: 10px;
-  }
-  
-  .social-icon {
+}
+.red{
+    display: inline-block;
+    margin-left: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align:center;
     color: #fff;
-    font-size: 24px;
-    margin-right: 10px;
-  }
-
+}
+.logo{
+    width: 30px;
+    display: block;
+    margin: 25%;
+}
 .linea{
     width: 100%;
     max-width: 1200px;
@@ -342,9 +365,6 @@ footer {
     background: #fff;
     margin-bottom: 50px;
 }
-
-
-
 @media screen and (max-width: 800px){
     .menu-navegacion{
         position: fixed;

@@ -5,21 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/cabana-de-madera.png" type="image/x-icon">
-  
-  <!--CSS-->
   <link rel="stylesheet" type="text/css" href="./index.css"/>
-
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lora&display=swap" rel="stylesheet"> 
-
   <title> Cabaña "La Deseada"</title>
 </head>
 <body>
   <header>
-    <!--Menu-->
     <section class="inicio" id="inicio">
       <img class="hamburguer" src="./img/menu2.png" alt="menu">
       <nav class="menu-navegacion">
@@ -30,17 +25,14 @@
         <a href="#reservas">Reservas</a>
       </nav>
       <section class="textos-header">
+        <!--
+        <img src="./img/principal3.jpg" alt="entrada">-->
         <h1 class="titulo-header">Cabañas "La Deseada"</h1>
-
-        <!--Animacion-->
-        <p class="subtitulo-header residence">Escápate a la tranquilidad de la naturaleza y relájate en nuestra acogedora cabaña rodeada de vistas impresionantes</p>
+        <p class="subtitulo-header">Escápate a la tranquilidad de la naturaleza y relájate en nuestra acogedora cabaña rodeada de vistas impresionantes</p>
       </section>
     </section>
   </header>
 
-
-
-  <!--Maps y Texto-->
   <main>
     <section class="nosotros" id="nosotros">
       <h2 class="subtitulo">Nosotros</h2>
@@ -48,15 +40,15 @@
         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.7007227295358!2d-58.44905432572337!3d-32.932504473599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b0013bf073f135%3A0xa3e57e8288f64a1b!2sLa%20Deseada%20Caba%C3%B1as!5e0!3m2!1ses!2sar!4v1683932372937!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <p>Bienvenidos a nuestra hermosa cabaña en el campo, donde podrás disfrutar de una estancia relajante en medio de la naturaleza. Nuestra cabaña está ubicada en un entorno idílico rodeado de montañas, praderas y bosques, lo que la convierte en el lugar perfecto para desconectar y disfrutar de la tranquilidad.
-        <br><br>
-          La cabaña en sí es un refugio acogedor y cómodo, construido con materiales naturales como la madera y la piedra. Su decoración rústica y cálida te hará sentir como en casa, mientras que sus amplios ventanales te permitirán disfrutar de las vistas panorámicas del paisaje circundante. La cabaña cuenta con una cocina totalmente equipada, una cómoda sala de estar con chimenea y una terraza con muebles de exterior, donde podrás disfrutar de una cena al aire libre mientras contemplas el atardecer.
+
+        La cabaña en sí es un refugio acogedor y cómodo, construido con materiales naturales como la madera y la piedra. Su decoración rústica y cálida te hará sentir como en casa, mientras que sus amplios ventanales te permitirán disfrutar de las vistas panorámicas del paisaje circundante. La cabaña cuenta con una cocina totalmente equipada, una cómoda sala de estar con chimenea y una terraza con muebles de exterior, donde podrás disfrutar de una cena al aire libre mientras contemplas el atardecer.
+                
+        En los alrededores de la cabaña encontrarás numerosas actividades al aire libre, como senderismo, pesca, ciclismo de montaña y paseos a caballo. También puedes disfrutar de un picnic en una de las praderas cercanas o simplemente relajarte en un banco junto a un arroyo. Si buscas un poco más de acción, hay varios pueblos cercanos donde puedes disfrutar de la gastronomía local, tiendas de artesanía y festivales.
+                
         </p>
 
       </section>
     </section>
-
-
-    <!--Galeria-->
     <section class="galeria" id="galeria">
       <section class="tarjetas-galeria">
           <h2 class="subtitulo">Galeria</h2>
@@ -113,7 +105,6 @@
       </section>
     </section>
 
-    <!--Opiniones-->
    <section class="opinion" id="opiniones">
      <h2 class="subtitulo">Opiniones</h2>
      <section class="opiniones">
@@ -141,7 +132,18 @@
       </section>
     </section>
 
-    <!--Formulario-->
+    <!--API-->
+
+    <section>
+     <div id="clima-container">
+        <h2 id="ciudad"></h2>
+        <p id="descripcion"></p>
+        <p id="temperatura"></p>
+        <p id="humedad"></p>
+      </div>
+    </section>
+
+    
     <section id="reservas">
       <h2 class="subtitulo">Formulario de Reserva</h2>
       <div class="form-container">
@@ -173,35 +175,29 @@
 
   </main>
   
-  <!--API-->
 
-  <section>
-    <div id="clima-container">
-      <h2 id="ciudad"></h2>
-      <p id="descripcion"></p>
-      <p id="temperatura"></p>
-      <p id="humedad"></p>
-    </div>
-  </section>
-
-  <!--Footer-->
-
-  <footer>
-    <div class="social-icons">
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-    <p>&copy; 2023 Nombre de la Residencia. Todos los derechos reservados.</p> 
-    
+  <footer class="footer">
+    <section class="footer-contenido">
+      <section class="contacto">
+        <h2 class="diseño">Cabaña "La Deseada"</h2>
+        <p>@Grupo 21</p>
+      </section>
+      <section class="redes-social">
+        <a href="https://www.facebook.com/ladeseada.residencia" class=" red" target="_blank">
+          <img class="logo" src="./img/1486164476-facebook_79662.png" alt="facebook">
+        
+        </a>
+        <a href="https://www.instagram.com/ladeseadaapart/?hl=es" class="red" target="_blank">
+          <img class="logo" src="./img/1486164464-instagram_79660.png" alt="instagram">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=35166666666" class="red" target="_blank">
+          <img class="logo" src="./img/1486164481-whatsapp_79670.png" alt="whatsapp">
+        </a>
+      </section>
+    </section>
     <section class="linea"></section>
-
   </footer>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="menu.js"></script>
   <script src="main.js"></script>
-  <script src="https://kit.fontawesome.com/1d48673ec2.js" crossorigin="anonymous"></script>
 </body>
 </html>  
