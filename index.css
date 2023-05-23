@@ -11,6 +11,8 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 /* inicio*/
+
+
 header{
     background-repeat: no-repeat;
     background-position: center;
@@ -59,9 +61,24 @@ header .textos-header{
 .subtitulo-header{
     color: #fff;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 35px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.685);
 }
+
+/*Animacion*/
+
+.residence {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .residence.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
 /*Nosotros*/
 
@@ -272,6 +289,29 @@ form {
     text-align:center;
     color: #fff;
 }
+
+
+/*API del clima*/
+
+#clima-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #ciudad {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #descripcion {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #temperatura, #humedad {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 
 
 

@@ -62,3 +62,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var residence = document.querySelector('.residence');
+  
+    window.addEventListener('scroll', function() {
+      if (isElementInViewport(residence)) {
+        residence.classList.add('show');
+      }
+    });
+  
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  });
+  
+
+
+
+
+
+const apiKey = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}'; // Reemplaza con tu propia API key de OpenWeatherMap
+
+// Función para obtener el clima actual
+function obtenerClima(ciudad) {
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      mostrarClima(data);
+    })
+    .catch(error => {
+      console.error('Error al obtener el clima:', error);
+    });
+}
+
+// Función para mostrar los datos del clima en el HTML
+function mostrarClima(data) {
+  const ciudadElement = document.getElementById('ciudad');
+  const descripcionElement = document.getElementById('descripcion');
+  const temperaturaElement = document.getElementById('temperatura');
+  const humedadElement = document.getElementById('humedad');
+
+  ciudadElement.textContent = data.name;
+  descripcionElement.textContent = data.weather[0].description;
+  temperaturaElement.textContent = `Temperatura: ${Math.round(data.main.temp - 273.15)}°C`;
+  humedadElement.textContent = `Humedad: ${data.main.humidity}%`;
+}
+
+// Ejemplo de uso
+obtenerClima('Buenos Aires'); // Reemplaza 'Ciudad' con el nombre de la ciudad que deseas obtener el clima
