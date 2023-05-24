@@ -17,7 +17,7 @@ header{
     width: 100%;
     height: 800px;
     background: #b7c7c7ab;  
-    background: url(../La-Deseada-Residencia-main/img/principal3.jpg); 
+    background: url(./img/principal3.jpg); 
     background-size: cover;
     position: relative;
 }
@@ -64,18 +64,17 @@ header .textos-header{
 }
 
 /*Animacion*/
-
 .residence {
     text-align: center;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s, transform 1s;
-}
+  }
   
-.residence.show {
+  .residence.show {
     opacity: 1;
     transform: translateY(0);
-}
+  }
 
 
 /*Nosotros*/
@@ -83,10 +82,7 @@ main{
     margin: auto;
     overflow: hidden;
 }
-h2{
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top: 5rem;
-}
+
 
 .subtitulo{
     margin-top: 60px;
@@ -94,6 +90,7 @@ h2{
     text-align: center;
     font-weight: 300;
     margin-bottom: 40px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .contenedor-nosotros{
     display: flex;
@@ -160,7 +157,7 @@ h2{
 }
 .hover-galeria p{
     color: #fff;
-    font-size: 22px;
+    font-size: 19px;
     text-align: justify;
     padding: 15px;
 }
@@ -206,21 +203,24 @@ h2{
 
 
 /*reserva*/
+.reserva{
+    margin-top: 50px;
+}
+
 form {
     max-width: 400px;
     margin: 0 auto;
 }
 
 .form-container {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
-    padding: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: -15rem;
+    
 }
   
 .form-group {
@@ -373,9 +373,9 @@ footer{
         height: 100%;
         /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
         /* 02 */
-        background-image: linear-gradient(to top, #0300089d 0%, #03044ea4 100%);
+        background-image: linear-gradient(to top, #0300089d 0%, #212224a4 100%);
         /* 028 */
-        background-image: linear-gradient(135deg,#0300089d 0%, #03044ea4 100%);
+        background-image: linear-gradient(135deg,#0300089d 0%, #212224a4 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -419,11 +419,14 @@ footer{
     
     .contenedor-nosotros p{
         width: 80%;
-        font-size: 90%;
+        font-size: 93%;
     }
 
     .img-galeria{
-        width: 45%;
+        width: 80%;
+    }
+    .hover-galeria p{
+        font-size: 16px;
     }
     
     
@@ -471,9 +474,9 @@ footer{
         height: 100%;
         /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
         /* 02 */
-        background-image: linear-gradient(to top, #0300089d 0%, #03044ea4 100%);
+        background-image: linear-gradient(to top, #0300089d 0%, #212224a4 100%);
         /* 028 */
-        background-image: linear-gradient(135deg,#0300089d 0%, #03044ea4 100%);
+        background-image: linear-gradient(135deg,#0300089d 0%, #212224a4 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -517,12 +520,15 @@ footer{
         margin-bottom: 20px;
     }
     .contenedor-nosotros p{
-        width: 90%;
+        width: 93%;
     }
 
 
     .img-galeria{
         width: 90%;
+    }
+    .hover-galeria p{
+        font-size: 16px;
     }
    
     .cont-opiniones{
